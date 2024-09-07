@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RPS Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 id="title">RPS Game</h2>
+            <div class="choices">
+                <button
+                    class="choice"
+                    id="rock-btn"
+                    onclick="choiceBtn('rock')"
+                >
+                    &#129704;
+                </button>
+
+                <button
+                    class="choice"
+                    id="paper-btn"
+                    onclick="choiceBtn('paper')"
+                >
+                    &#128196;
+                </button>
+                <button
+                    class="choice"
+                    id="scissors-btn"
+                    onclick="choiceBtn('scissors')"
+                >
+                    &#9986;
+                </button>
+            </div>
+            <div id="decision-div">
+                <h1 id="decision-prompt"></h1>
+            </div>
+            <button id="play-again-btn" onclick="playAgainBtnFunc()">Play Again</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
